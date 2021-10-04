@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int printIntArr(int[] array){
+int printIntArr(int array[]){
     int arrayLength = sizeof array / sizeof array[0];
     int i;
     printf("[ ");

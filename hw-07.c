@@ -8,6 +8,7 @@ int printIntArr(int array[]){
         printf("%d ", array[i]);
     }
     printf("]\n");
+    return 0;
 }
 
 int calcAvg(int array[]){
@@ -19,4 +20,19 @@ int calcAvg(int array[]){
         total += array[i];
     }
     return total / arrayLength;
+}
+
+int cloneArray(int copyFrom[], int copyTo[]){
+    if (sizeof copyFrom / sizeof copyFrom [0] == sizeof copyTo / sizeof copyTo[0]){
+        int arrayLength = sizeof copyFrom / sizeof copyFrom[0];
+        int i;
+        for (i = 0; i < arrayLength; i++){
+            copyTo[i] = copyFrom[i];
+        }
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
 }
